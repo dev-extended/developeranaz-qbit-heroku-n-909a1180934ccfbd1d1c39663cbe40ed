@@ -8,8 +8,8 @@ FROM developeranaz/qbittorrent2rclone:beta1
 COPY entrypoint.sh /entrypoint.sh 
 COPY qBconf.tar.gz /qBconf.tar.gz
 RUN tar xvf /qBconf.tar.gz
-curl -O 'https://github.com/WDaan/VueTorrent/releases/download/v0.15.3/vuetorrent.zip'
-unzip vuetorrent.zip
+RUN wget 'https://github.com/WDaan/VueTorrent/releases/download/v0.15.3/vuetorrent.zip'
+RUN unzip vuetorrent.zip
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
 RUN chmod +x /entrypoint.sh
