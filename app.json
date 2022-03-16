@@ -12,6 +12,10 @@
       "description": "Torrent downloader website password",
       "value": "Enter your new password here"
     },
+      "SELFPING": {
+      "description": "your app-name, same as above(optional) #Warning:selfping eats your dyno hours",
+      "value": "app-name"
+    },
       "WEBUSER": {
       "description": "Torrent downloader website username (default username locked to developranaz for testing)",
       "value": "Enter your new username here"
